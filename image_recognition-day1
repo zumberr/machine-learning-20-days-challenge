@@ -10,7 +10,9 @@ iv3 = InceptionV3()
 #cargamos imagen
 #from google.colab import files
 #uploaded = files.upload()
-x = image.img_to_array(image.load_img("image.jpg", target_size=(299, 299)))
+print("soy un adivinador de imagenes mi objetivo es predecir que imagen es la que vas a subir")
+print("sube una imagen y ajusta la ruta de lo que quieras y tratare de predecir por ti")
+x = image.img_to_array(image.load_img("ruta.jpg", target_size=(299, 299)))
 #creamos dimensiones
 x = x.reshape([1, x.shape[0], x.shape[1], x.shape[2]]) 
 #analizar la imagen con predict
@@ -20,12 +22,9 @@ y = iv3.predict(x)
 print(decode_predictions(y))
 #guardar prediccion
 datos1 = decode_predictions(y)
-print("Imagen 2 clasificada como:")
+print("Creo que tu imagen es probable que sea:")
 print(datos1[0][0])
 
 
-if datos1[0][0] == 'German_shepherd':
-  print("Es un pastor alemán")
 
-if datos1[0][0] == 'Labrador_retriever':
-    print("Es un labrador retriever")
+
