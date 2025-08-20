@@ -13,6 +13,8 @@ Cada fragmento de código o ejercicio busca no solo resolver un problema, sino t
 
 ✨ Objetivo personal
 
+llegar a 20 Dias de aprendizaje continuo
+
 Este proyecto es un espacio de experimentación y crecimiento, en el que voy recopilando:
 
 Implementaciones de algoritmos.
